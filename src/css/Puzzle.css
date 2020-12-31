@@ -1,0 +1,114 @@
+#puzzle {
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+    position: relative;
+}
+
+.empty {
+    background-color:white;
+}
+
+.letter {
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 14px 10px;
+    border-color: rgb(160, 153, 153);
+}
+
+.selected {
+    background: rgba(170, 164, 114, 0.2);
+}
+
+.rainbow {
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+  
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+}
+
+/* #hints-container {
+	float: left;
+	width: 65%;
+    padding-top: 60px;
+    margin-left: 30px;
+} */
+
+#buttons-container {
+    clear: both;
+    padding-top: 50px;
+    margin-left: 40px;
+}
+
+.active {
+    border-color: rgb(255, 0, 0);
+}
+
+.positive {
+    background-color:rgb(123, 196, 156);
+}
+
+.negative {
+    background-color:rgb(212, 143, 143);
+}
+
+.qnum {
+    position: absolute;
+    font-size: 12px;
+    color: grey;
+    left: 2px;
+    top: 2px;
+}
+
+.qnum-alt {
+    position: absolute;
+    font-size: 12px;
+    color: grey;
+    right: 2px;
+    top: 2px;
+}
+
+td {
+    position:relative;
+}
